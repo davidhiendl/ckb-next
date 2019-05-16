@@ -878,7 +878,6 @@ static QHash<QString, Key> getMap(KeyMap::Model model, KeyMap::Layout layout){
         break;
     }
     case KeyMap::IRONCLAW:{
-        // M65 isn't a keyboard; all mouse maps are unique.
         for(const Key* key = IronclawKeys; key < IronclawKeys + KEYCOUNT_IRONCLAW; key++){
             // Keyboard keys are written from the center because that's where the LEDs are, but the mouse buttons are odd shapes so they're
             // written from the upper left
